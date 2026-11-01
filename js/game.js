@@ -155,6 +155,8 @@ function startCampaign() {
         country.description;
 
     showScreen("campaignScreen");
+            showScreen("mapScreen");
+    MapSystem.initialize();
 }
 
 

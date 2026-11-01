@@ -166,6 +166,43 @@
 
             </div>
         </section>
+        <!-- CAMPAIGN MAP -->
+        <section id="mapScreen" class="screen">
+            <div class="content-panel map-panel">
+
+                <p class="eyebrow">THE EUROPEAN THEATER</p>
+                <h1>July 1914</h1>
+
+                <p class="section-description">
+                    Select a territory to view its information.
+                </p>
+
+                <div class="map-layout">
+
+                    <div id="europeMap" class="europe-map">
+                        <!-- Interactive map will be added here -->
+                    </div>
+
+                    <aside id="territoryPanel" class="territory-panel">
+                        <h2>Territory Information</h2>
+                        <p id="territoryName">
+                            Select a territory on the map.
+                        </p>
+                        <p id="territoryOwner"></p>
+                        <p id="territoryDetails"></p>
+                    </aside>
+
+                </div>
+
+                <div class="map-footer">
+                    <span id="campaignDate">JULY 1914</span>
+                    <button class="menu-button" id="mapBackButton">
+                        RETURN TO CAMPAIGN
+                    </button>
+                </div>
+
+            </div>
+        </section>
 
         <!-- SETTINGS -->
         <section id="settingsScreen" class="screen">
@@ -214,6 +251,7 @@
 
     </main>
 
+    <script src="js/map.js"></script>
     <script src="js/game.js"></script>
 </body>
 </html>
