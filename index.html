@@ -1,46 +1,219 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171b17">
 
     <title>The Great War: THE GAME</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ui.css">
 </head>
 
 <body>
+    <main id="game">
 
-    <div id="game">
+        <!-- MAIN TITLE SCREEN -->
+        <section id="titleScreen" class="screen active">
+            <div class="title-overlay">
+                <p class="eyebrow">EUROPE • 1914</p>
 
-        <div id="titleScreen">
+                <h1>THE GREAT WAR</h1>
+                <div class="title-divider"></div>
+                <h2>THE GAME</h2>
 
-            <div id="titleBox">
+                <p class="tagline">
+                    History is in your hands.
+                </p>
 
-                <h2 class="subtitle">1914</h2>
+                <nav class="main-menu">
+                    <button class="menu-button primary"
+                            id="newGameButton">
+                        NEW GAME
+                    </button>
 
-                <h1>The Great War</h1>
+                    <button class="menu-button"
+                            id="loadGameButton">
+                        LOAD GAME
+                    </button>
 
-                <h2 class="gameTitle">THE GAME</h2>
+                    <button class="menu-button"
+                            id="settingsButton">
+                        SETTINGS
+                    </button>
 
-                <button id="newGameButton">New Game</button>
+                    <button class="menu-button"
+                            id="creditsButton">
+                        CREDITS
+                    </button>
+                </nav>
 
-                <button>Load Game</button>
+                <p class="version">
+                    VERSION 0.1.0 • FOUNDATIONS
+                </p>
+            </div>
+        </section>
 
-                <button>Settings</button>
+        <!-- COUNTRY SELECTION -->
+        <section id="countryScreen" class="screen">
+            <div class="content-panel">
 
-                <button>Credits</button>
+                <p class="eyebrow">THE WORLD ON THE BRINK</p>
+                <h1>Select Your Nation</h1>
 
-                <p class="version">Version 0.1.0 - Foundations</p>
+                <p class="section-description">
+                    July 1914. Europe stands on the edge of war.
+                    Choose a nation to lead through the coming crisis.
+                </p>
+
+                <div id="countryGrid" class="country-grid">
+
+                    <button class="country-card" data-country="germany">
+                        <span class="country-flag">🇩🇪</span>
+                        <span class="country-name">Germany</span>
+                        <span class="country-description">
+                            Industrial powerhouse of Central Europe.
+                        </span>
+                    </button>
+
+                    <button class="country-card" data-country="austriaHungary">
+                        <span class="country-flag">🇦🇹</span>
+                        <span class="country-name">Austria-Hungary</span>
+                        <span class="country-description">
+                            A vast empire facing growing internal tensions.
+                        </span>
+                    </button>
+
+                    <button class="country-card" data-country="greatBritain">
+                        <span class="country-flag">🇬🇧</span>
+                        <span class="country-name">Great Britain</span>
+                        <span class="country-description">
+                            A global empire protected by a powerful navy.
+                        </span>
+                    </button>
+
+                    <button class="country-card" data-country="france">
+                        <span class="country-flag">🇫🇷</span>
+                        <span class="country-name">France</span>
+                        <span class="country-description">
+                            A major European power determined to defend its borders.
+                        </span>
+                    </button>
+
+                    <button class="country-card" data-country="russia">
+                        <span class="country-flag">🇷🇺</span>
+                        <span class="country-name">Russia</span>
+                        <span class="country-description">
+                            A vast empire with enormous manpower.
+                        </span>
+                    </button>
+
+                    <button class="country-card" data-country="italy">
+                        <span class="country-flag">🇮🇹</span>
+                        <span class="country-name">Italy</span>
+                        <span class="country-description">
+                            A young kingdom with important strategic choices ahead.
+                        </span>
+                    </button>
+
+                </div>
+
+                <div class="selection-footer">
+                    <button class="menu-button back-button"
+                            id="countryBackButton">
+                        ← MAIN MENU
+                    </button>
+
+                    <p id="selectionMessage">
+                        Select a nation to continue.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAMPAIGN INTRODUCTION -->
+        <section id="campaignScreen" class="screen">
+            <div class="content-panel campaign-panel">
+
+                <p class="eyebrow">YOUR CAMPAIGN BEGINS</p>
+
+                <div id="chosenFlag" class="chosen-flag">🇩🇪</div>
+                <h1 id="chosenCountry">Germany</h1>
+
+                <div class="title-divider"></div>
+
+                <h2>July 1914</h2>
+
+                <p id="campaignDescription" class="section-description">
+                    Europe is entering a period of unprecedented tension.
+                </p>
+
+                <p class="historical-note">
+                    The assassination of Archduke Franz Ferdinand in Sarajevo
+                    has set off a diplomatic crisis. The decisions made in
+                    the coming weeks may determine the fate of Europe.
+                </p>
+
+                <p class="coming-soon">
+                    CAMPAIGN MAP – NEXT DEVELOPMENT MILESTONE
+                </p>
+
+                <button class="menu-button primary"
+                        id="campaignBackButton">
+                    RETURN TO COUNTRY SELECTION
+                </button>
 
             </div>
+        </section>
 
-        </div>
+        <!-- SETTINGS -->
+        <section id="settingsScreen" class="screen">
+            <div class="content-panel small-panel">
+                <p class="eyebrow">GAME OPTIONS</p>
+                <h1>Settings</h1>
+                <p class="section-description">
+                    Sound, music, and display options will be added
+                    in a future update.
+                </p>
+                <button class="menu-button" data-home>
+                    ← MAIN MENU
+                </button>
+            </div>
+        </section>
 
-    </div>
+        <!-- CREDITS -->
+        <section id="creditsScreen" class="screen">
+            <div class="content-panel small-panel">
+                <p class="eyebrow">THE GREAT WAR: THE GAME</p>
+                <h1>Credits</h1>
+                <p class="section-description">
+                    An educational World War I strategy game.
+                </p>
+                <p>Created for history education.</p>
+                <p>Version 0.1.0 – Foundations</p>
+                <button class="menu-button" data-home>
+                    ← MAIN MENU
+                </button>
+            </div>
+        </section>
 
-<script src="js/game.js"></script>
+        <!-- LOAD GAME -->
+        <section id="loadScreen" class="screen">
+            <div class="content-panel small-panel">
+                <p class="eyebrow">CAMPAIGN ARCHIVE</p>
+                <h1>Load Game</h1>
+                <p class="section-description">
+                    Saved campaigns will be available here in a future update.
+                </p>
+                <button class="menu-button" data-home>
+                    ← MAIN MENU
+                </button>
+            </div>
+        </section>
 
+    </main>
+
+    <script src="js/game.js"></script>
 </body>
 </html>
