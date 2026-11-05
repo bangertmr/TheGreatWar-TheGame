@@ -143,7 +143,14 @@ function startCampaign() {
         return;
     }
 
-    const country = Game.countries[Game.selectedCountry];
+    const databaseCountry =
+    DataManager.getCountry(Game.selectedCountry);
+
+    console.log("Selected Country ID:", Game.selectedCountry);
+console.log("Database Country:", databaseCountry);
+
+const country =
+    Game.countries[Game.selectedCountry];
 
     document.getElementById("chosenFlag").textContent =
         country.flag;
