@@ -1,0 +1,37 @@
+{
+    "id": "great-britain",
+    "name": "United Kingdom",
+    "capital": "London",
+    "government": "Constitutional monarchy",
+    "leader": "King George V",
+
+    "population": 46000000,
+
+    "military": {
+        "activeArmy": 71000,
+        "reserve": 300000,
+        "navy": {
+            "battleships": 29,
+            "battlecruisers": 9,
+            "cruisers": 34,
+            "destroyers": 200,
+            "submarines": 76
+        }
+    },
+
+    "resources": {
+        "coal": 5,
+        "steel": 4,
+        "food": 3
+    },
+
+    "diplomacy": {
+        "allies": [
+            "France",
+            "Russia"
+        ],
+        "rivals": [
+            "Germany"
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "id": "france",
+    "name": "French Republic",
+    "capital": "Paris",
+    "government": "Republic",
+    "leader": "President Raymond Poincaré",
+
+    "population": 39000000,
+
+    "military": {
+        "activeArmy": 880000,
+        "reserve": 3500000,
+        "navy": {
+            "battleships": 10,
+            "battlecruisers": 0,
+            "cruisers": 22,
+            "destroyers": 80,
+            "submarines": 50
+        }
+    },
+
+    "resources": {
+        "coal": 3,
+        "steel": 4,
+        "food": 5
+    },
+
+    "diplomacy": {
+        "allies": [
+            "Russia",
+            "Great Britain"
+        ],
+        "rivals": [
+            "Germany"
+        ]
+    }
+}

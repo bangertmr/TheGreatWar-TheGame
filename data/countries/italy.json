@@ -1,0 +1,37 @@
+{
+    "id": "italy",
+    "name": "Kingdom of Italy",
+    "capital": "Rome",
+    "government": "Constitutional monarchy",
+    "leader": "King Victor Emmanuel III",
+
+    "population": 35000000,
+
+    "military": {
+        "activeArmy": 300000,
+        "reserve": 1000000,
+        "navy": {
+            "battleships": 8,
+            "battlecruisers": 0,
+            "cruisers": 10,
+            "destroyers": 36,
+            "submarines": 20
+        }
+    },
+
+    "resources": {
+        "coal": 1,
+        "steel": 2,
+        "food": 3
+    },
+
+    "diplomacy": {
+        "allies": [
+            "Germany",
+            "Austria-Hungary"
+        ],
+        "rivals": [
+            "Austria-Hungary"
+        ]
+    }
+}

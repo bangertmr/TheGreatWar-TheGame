@@ -1,0 +1,38 @@
+{
+    "id": "russia",
+    "name": "Russian Empire",
+    "capital": "St. Petersburg",
+    "government": "Absolute monarchy",
+    "leader": "Tsar Nicholas II",
+
+    "population": 170000000,
+
+    "military": {
+        "activeArmy": 1400000,
+        "reserve": 3000000,
+        "navy": {
+            "battleships": 7,
+            "battlecruisers": 0,
+            "cruisers": 8,
+            "destroyers": 30,
+            "submarines": 30
+        }
+    },
+
+    "resources": {
+        "coal": 4,
+        "steel": 3,
+        "food": 5
+    },
+
+    "diplomacy": {
+        "allies": [
+            "France",
+            "Great Britain"
+        ],
+        "rivals": [
+            "Germany",
+            "Austria-Hungary"
+        ]
+    }
+}

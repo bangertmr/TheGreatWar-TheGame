@@ -1,0 +1,37 @@
+{
+    "id": "austria-hungary",
+    "name": "Austria-Hungary",
+    "capital": "Vienna",
+    "government": "Dual monarchy",
+    "leader": "Emperor Franz Joseph I",
+
+    "population": 52000000,
+
+    "military": {
+        "activeArmy": 478000,
+        "reserve": 3000000,
+        "navy": {
+            "battleships": 4,
+            "battlecruisers": 0,
+            "cruisers": 12,
+            "destroyers": 18,
+            "submarines": 6
+        }
+    },
+
+    "resources": {
+        "coal": 4,
+        "steel": 3,
+        "food": 4
+    },
+
+    "diplomacy": {
+        "allies": [
+            "Germany"
+        ],
+        "rivals": [
+            "Serbia",
+            "Russia"
+        ]
+    }
+}

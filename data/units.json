@@ -1,0 +1,18 @@
+{
+    "infantry": {
+        "name": "Infantry",
+        "type": "land"
+    },
+    "cavalry": {
+        "name": "Cavalry",
+        "type": "land"
+    },
+    "artillery": {
+        "name": "Artillery",
+        "type": "land"
+    },
+    "dreadnought": {
+        "name": "Dreadnought",
+        "type": "naval"
+    }
+}

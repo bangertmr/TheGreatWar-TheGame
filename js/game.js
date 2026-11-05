@@ -229,13 +229,15 @@ function initializeButtons() {
 // GAME INITIALIZATION
 // -----------------------------------------
 
-function initializeGame() {
+async function initializeGame() {
 
     console.log("--------------------------------");
     console.log("THE GREAT WAR: THE GAME");
     console.log("Version:", Game.version);
     console.log("Game engine initialized.");
     console.log("--------------------------------");
+
+    await DataManager.loadData();
 
     initializeButtons();
 

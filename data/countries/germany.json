@@ -1,0 +1,37 @@
+{
+    "id": "germany",
+    "name": "German Empire",
+    "capital": "Berlin",
+    "government": "Constitutional monarchy",
+    "leader": "Kaiser Wilhelm II",
+
+    "population": 68000000,
+
+    "military": {
+        "activeArmy": 891000,
+        "reserve": 4500000,
+        "navy": {
+            "battleships": 17,
+            "battlecruisers": 5,
+            "cruisers": 9,
+            "destroyers": 90,
+            "submarines": 28
+        }
+    },
+
+    "resources": {
+        "coal": 5,
+        "steel": 5,
+        "food": 3
+    },
+
+    "diplomacy": {
+        "allies": [
+            "Austria-Hungary"
+        ],
+        "rivals": [
+            "France",
+            "Russia"
+        ]
+    }
+}
